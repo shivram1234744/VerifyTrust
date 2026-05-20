@@ -1,0 +1,251 @@
+﻿ @model List<TrustPlus.Models.Client_Master>
+@{
+    ViewData["Title"] = "ClientMst";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<style>
+    .badge-pending {
+        background: orange;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .badge-progress {
+        background: blue;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .badge-complete {
+        background: green;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<div class="pg-body">
+    <div class="pg-intro">
+        <h2>System Overview</h2>
+        <p>Real-time platform statistics and activity</p>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+
+            @TempData["SuccessMessage"]
+
+            class="btn-close"
+            <button type="button"
+                    data-bs-dismiss="alert">
+            </button>
+
+        </div>
+    }
+    <!--update -->
+    <div class="modal fade" id="employeeModalUpdate" tabindex="-1" aria-labelledby="employeeModalUpdateLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="employeeModalUpdateLabel">Update Client</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="employeeFormUpdate" method="post">
+                        <input type="hidden" name="ClientId" />
+                        <div class="mb-3">
+                            <label class="form-label">ClientName</label>
+                            <input type="text" class="form-control" name="ClientName">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"> Address</label>
+                            <input type="text" class="form-control" name="Address">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"> MobileNumber</label>
+                            <input type="text" class="form-control" name="MobileNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label"> ContactPerson</label>
+                            <input type="text" class="form-control" name="ContactPerson">
+                        </div> <div class="mb-3">
+                            <label class="form-label">Web Address</label>
+                            <input type="text" class="form-control" name="WebAddress">
+                        </div>
+              <div class="mb-3">
+                    <label class="form-label"> UserId</label>
+                    <input type="text" class="form-control" name="CUserId">
+                </div>
+            
+                       @*  <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" name="CPassword">
+                        </div> *@
+                      
+                        
+                        <button class="btn btn-success" type="submit">Update</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--update -->
+
+
+
+   
+    <div class="card">
+        <div class="cd-hd d-flex align-items-center justify-content-between"><span class="cd-t">All Users (2,926)</span>            <button class="nbtn-p btn btn-n btn-sm" onclick="location.href='/Admin/Registration'">Client Registration</button></div>
+      
+        <div class="tw">
+            <table class="tbl">
+
+                <thead>
+                    <tr>
+                        <th>ClientId</th>
+                        <th>ClientName</th>
+                        <th>Address</th>
+                        <th>ContactPerson</th>
+                        <th>MobileNumber</th>
+                        <th>WebAddress</th>
+                        <th>AgreementDate</th>
+                        <th>RenewalDate</th>
+                        <th>UserId</th>
+                        <th>Password</th>
+                        <th>Action</th>
+
+                       
+
+
+                    </tr>
+                </thead>
+                <tbody id="clientTable">
+
+                    @if (Model != null)
+                    {
+                        foreach (var Item in Model)
+                        {
+                            <tr  style="cursor:pointer;">
+                                <td>@Item.ClientId</td>
+                                <td>@Item.ClientName</td>
+                                <td>@Item.Address</td>
+                                <td>@Item.ContactPerson</td>
+                                <td>@Item.MobileNumber</td>
+                                <td>@Item.WebAddress</td>
+                                <td>@Item.AgreementDate</td>
+                                <td>@Item.RenewalDate</td>
+                                <td>@Item.CUserId</td>
+                               @*  <td>@Item.CPassword</td> *@
+                          <td>      <span class="badge bg-light text-dark font-monospace">••••••••</span></td>
+
+                                
+                                <td>
+
+                                    <button class='btn btn-warning m-1 btn-sm edit-btn' data-id="@Item.ClientId">Edit</button>
+                                    <button class='btn btn-danger btn-sm  delete-btn' data-id="@Item.ClientId">Delete</button>
+                                    
+                                </td>
+
+
+
+
+
+                            
+                               
+
+                            </tr>
+                        }
+                    }
+                </tbody>
+
+
+            </table>
+        </div>
+        <div class="pg-row d-flex justify-content-between align-items-center"><span class="pg-info">Showing 1–3 of 2,926</span><div class="pg-btns d-flex gap-1"><button class="btn btn-g btn-sm">← Prev</button><button class="btn btn-n btn-sm">1</button><button class="btn btn-g btn-sm">2</button><button class="btn btn-g btn-sm">Next →</button></div></div>
+    </div>
+</div>
+
+<script>
+    $(document).on("click", ".delete-btn", function () {
+        var id = $(this).data("id");
+
+        if (confirm("Are you sure you want to delete this employee?")) {
+            $.ajax({
+                url: '/Admin/DeleteClient',
+                type: 'POST',
+                data: { id: id },
+                success: function (response) {
+                    console.log(response);
+                    if (response.success) {
+                        alert(response.message);
+
+
+                        // loadEmployees();
+
+
+                         location.reload();
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert("Error: " + error);
+                }
+            });
+        }
+    });
+    $(document).on("click", ".edit-btn", function () {
+        var id = $(this).data("id");
+    
+
+        $.ajax({
+            url:"/Admin/GetClient",
+            type:'GET',
+            data: { id: id },
+            success: function (emp) {
+             console.log(emp)
+             console.log(emp.data)
+                $("#employeeFormUpdate [name='ClientId']").val(emp.clientId);
+                $("#employeeFormUpdate [name='ClientName']").val(emp.clientName);
+                $("#employeeFormUpdate [name='Address']").val(emp.address);
+                $("#employeeFormUpdate [name='ContactPerson']").val(emp.contactPerson);
+                $("#employeeFormUpdate [name='WebAddress']").val(emp.webAddress);
+                //  $("#employeeFormUpdate [name='Password']").val(emp.password);
+                $("#employeeFormUpdate [name='MobileNumber']").val(emp.mobileNumber);
+                $("#employeeFormUpdate [name='CUserId']").val(emp.cUserId);
+                $('#employeeModalUpdate').modal('show');
+            },
+            error: function (response) {
+                alert("Server Error!")
+            }
+        })
+    })
+
+    $("#employeeFormUpdate").on("submit", function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        $.ajax({
+            url: '/Admin/EditClient',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (res) {
+            
+                $('#employeeModalUpdate').modal('hide');
+                $('#employeeModalUpdate form')[0].reset();
+               // loadEmployees();
+                location.reload();
+            }
+        });
+    });
+</script>

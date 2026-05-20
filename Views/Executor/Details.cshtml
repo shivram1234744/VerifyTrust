@@ -1,0 +1,527 @@
+﻿@model TrustPlus.Models.VerificationSubmitVM
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_ExecutorLayout.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+    .details-wrapper {
+        background-color: #f8f9fa;
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 24px 32px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .back-link {
+        color: #6b7280;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+        font-size: 0.95rem;
+    }
+
+        .back-link:hover {
+            color: #111827;
+        }
+
+    .info-card {
+        background-color: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .doc-item {
+        background-color: #f9fafb;
+        border-radius: 8px;
+        transition: background-color 0.2s;
+    }
+
+        .doc-item:hover {
+            background-color: #f3f4f6;
+        }
+
+    .form-label {
+        font-weight: 500;
+        color: #6b7280;
+        margin-bottom: 6px;
+    }
+
+    .custom-input {
+        background-color: #ffffff;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-size: 0.95rem;
+        color: #111827;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+        .custom-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.15);
+            outline: none;
+        }
+
+    .badge-pending {
+        background-color: #fffbeb;
+        color: #d97706;
+        border: 1px solid #fde68a;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+
+    .badge-progress {
+        background-color: #eff6ff;
+        color: #2563eb;
+        border: 1px solid #93c5fd;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+
+    .badge-completed {
+        background-color: #ecfdf5;
+        color: #059669;
+        border: 1px solid #a7f3d0;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+
+    .badge-unknown {
+        background-color: #f3f4f6;
+        color: #6b7280;
+        border: 1px solid #d1d5db;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+
+    .progress-bar-custom {
+        height: 10px;
+        border-radius: 10px;
+        background-color: #e5e7eb;
+        overflow: hidden;
+    }
+
+        .progress-bar-custom .fill {
+            height: 100%;
+            background-color: #3b82f6;
+            border-radius: 10px;
+        }
+
+    .action-bar {
+        padding-top: 20px;
+    }
+
+    .btn-custom-primary {
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 24px;
+        font-weight: 500;
+    }
+
+        .btn-custom-primary:hover {
+            background-color: #1d4ed8;
+            color: white;
+        }
+
+    .btn-custom-secondary {
+        background-color: #f3f4f6;
+        color: #6b7280;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 10px 24px;
+        font-weight: 500;
+    }
+
+        .btn-custom-secondary:hover {
+            background-color: #e5e7eb;
+            color: #374151;
+        }
+
+    .custom-toast-success {
+        background-color: #16a34a !important;
+        color: #fff !important;
+        border: none;
+    }
+
+        .custom-toast-success .btn-close {
+            filter: invert(1);
+        }
+</style>
+
+<div class="details-wrapper">
+    <!-- Toast Messages -->
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index:99999">
+        <div id="successToast" class="toast align-items-center custom-toast-success border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessage"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <a href="javascript:history.back()" class="back-link d-inline-flex align-items-center gap-2 mb-4">
+        <i class="bi bi-arrow-left"></i> Back
+    </a>
+
+    <!-- Header Section -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="mb-4">
+            @if (ViewBag.Data != null)
+            {
+                <h2 class="fw-bold mb-2" style="color: #111827; font-size: 1.75rem; letter-spacing: -0.02em;">
+                    @ViewBag.Data.Name
+                </h2>
+
+                <div class="d-flex flex-wrap align-items-center gap-3 text-muted" style="font-size: 0.9rem; font-weight: 500;">
+                    <div class="d-flex align-items-center gap-1.5">
+                        <i class="bi bi-fingerprint text-secondary" style="font-size: 1rem;"></i>
+                        <span>ID: <strong class="text-dark">@ViewBag.Data.Id</strong></span>
+                    </div>
+
+                    <span class="text-light-emphasis d-none d-sm-inline">•</span>
+
+                    <div class="d-flex align-items-center gap-1.5">
+                        <i class="bi bi-briefcase text-secondary" style="font-size: 1rem;"></i>
+                        <span>@ViewBag.Data.Position</span>
+                    </div>
+
+                    <span class="text-light-emphasis d-none d-sm-inline">•</span>
+
+                    <div class="d-flex align-items-center gap-1.5">
+                        <i class="bi bi-building text-secondary" style="font-size: 1rem;"></i>
+                        <span>@ViewBag.Data.Department</span>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <h2 class="fw-bold mb-1" style="color: #111827;">Verification Details</h2>
+                <div class="text-muted small">Loading profile metadata...</div>
+            }
+        </div>
+        <div class="text-end" style="width: 200px;">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted small">Progress</span>
+                <span class="fw-bold" style="font-size: 1.1rem; color: #111827;">@Model.Progress%</span>
+            </div>
+            <div class="progress-bar-custom">
+                <div class="fill" style="width: @Model.Progress%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client / Candidate Registration Documents Card -->
+    <div class="card info-card mb-4 border-0">
+        <div class="card-body p-4">
+            <h5 class="fw-bold mb-4" style="color: #111827;">
+                <i class="bi bi-cloud-check text-success me-2"></i>Uploaded Documents By Client
+            </h5>
+            <div class="row g-3">
+                @if (ViewBag.DocumentPath != null )
+                {
+                 
+                        <div class="col-md-6">
+                            <div class="doc-item p-3 d-flex justify-content-between align-items-center" style="border: 1px solid #f3f4f6;">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="bi bi-file-earmark-arrow-up text-success fs-5"></i>
+                                    <div>
+                                        <div class="fw-medium text-dark" style="font-size: 0.95rem;">
+                                        @ViewBag.DocumentName
+                                        </div>
+                                        <!-- Original Guid File Name short form me dikhane ke liye -->
+                                    <div class="text-muted small truncate-text" style="max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="@ViewBag.DocumentPath">
+                                        @ViewBag.DocumentPath
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <!-- View Link (Aapka actual path uploads/documents/ hai) -->
+                                <a href="~/uploads/documents/@ViewBag.DocumentPath" target="_blank" class="text-secondary text-decoration-none" title="View Document">
+                                        <i class="bi bi-eye fs-5"></i>
+                                    </a>
+                                    <!-- Download Link -->
+                                <a href="~/uploads/documents/@ViewBag.DocumentPath" class="text-secondary text-decoration-none" download title="Download Document">
+                                        <i class="bi bi-download fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                   
+                }
+                else
+                {
+                    <div class="col-12">
+                        <div class="text-muted small p-2">
+                            <i class="bi bi-info-circle me-1"></i> No registration documents were uploaded by the client.
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Executer Evidence / Documents Display Card -->
+@*     <div class="card info-card mb-5 border-0">
+        <div class="card-body p-4">
+            <h5 class="fw-bold mb-4">Uploaded Evidence Documents By Executor</h5>
+            <div class="row g-3">
+                @if (Model.Verifications != null && Model.Verifications.Any(x => !string.IsNullOrEmpty(x.DocumentPath)))
+                {
+                    foreach (var item in Model.Verifications.Where(x => !string.IsNullOrEmpty(x.DocumentPath)))
+                    {
+                        <div class="col-md-6">
+                            <div class="doc-item p-3 d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="bi bi-file-earmark-text text-primary fs-5"></i>
+                                    <span class="fw-medium text-dark">
+                                        @System.IO.Path.GetFileName(item.DocumentPath)
+                                    </span>
+                                </div>
+                                <a href="/uploads/@item.DocumentPath" class="text-muted" download>
+                                    <i class="bi bi-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <div class="text-muted small p-2"><i class="bi bi-info-circle me-1"></i>No evidence documents uploaded yet for this job.</div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div> *@
+
+    <h4 class="fw-bold mb-4" style="color: #111827;">Verification Checks</h4>
+
+    <!-- Main Data Submission Form -->
+    <form method="post" enctype="multipart/form-data" asp-action="SubmitVerification">
+        <input type="hidden" asp-for="JobId" />
+        <input type="hidden" asp-for="ClientId" />
+
+        @if (Model.Verifications != null)
+        {
+            for (int i = 0; i < Model.Verifications.Count; i++)
+            {
+                <input type="hidden" asp-for="Verifications[i].Id" />
+                <input type="hidden" asp-for="Verifications[i].VarId" />
+                <!-- Added Hidden Field for existing document path string context mapping -->
+                <input type="hidden" asp-for="Verifications[i].DocumentPath" />
+
+                <div class="card info-card mb-4 border-0">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="fw-bold mb-0">@Model.Verifications[i].Name</h5>
+                            @{
+                                var statusClass = Model.Verifications[i].Status switch
+                                {
+                                    "Pending" => "badge-pending",
+                                    "In Progress" => "badge-progress",
+                                    "Completed" => "badge-completed",
+                                    _ => "badge-unknown"
+                                };
+                            }
+                            <span class="@statusClass">@(Model.Verifications[i].Status ?? "Pending")</span>
+                        </div>
+
+                        <div class="row g-4 mb-3">
+                            <!-- Status Dropdown -->
+                            <div class="col-md-4">
+                                <label class="form-label small">Status</label>
+                                <select asp-for="Verifications[i].Status" class="form-select custom-input">
+                                    <option value="Pending">Pending</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                            </div>
+
+                            <!-- Issue Type / Flag Dropdown -->
+                            <div class="col-md-4">
+                                <label class="form-label small">Flag / Issue Type</label>
+                                <select asp-for="Verifications[i].Flag" class="form-select custom-input">
+                                    <option value="">Select Flag</option>
+                                    <option value="Clear">🟢 Clear</option>
+                                    <option value="Minor Issue">🟡 Minor Issue</option>
+                                    <option value="Red Flag">🔴 Red Flag</option>
+                                </select>
+                            </div>
+
+                            <!-- File Upload Element -->
+                            <div class="col-md-4">
+                                <label class="form-label small">Evidence Document</label>
+                                <div class="d-flex align-items-center gap-2">
+                                    <label class="btn btn-outline-secondary bg-white mb-0 d-flex align-items-center gap-2" style="border-color: #d1d5db; font-weight: 500; cursor: pointer;">
+                                        <i class="bi bi-upload"></i> Upload File
+                                        <!-- FIXED: Bound to EvidenceFile (IFormFile) instead of DocumentPath -->
+                                        <input type="file" asp-for="Verifications[i].EvidenceFile" class="d-none file-input">
+                                    </label>
+                                    <span class="selected-file text-muted small truncate-text" style="max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                        No file selected
+                                    </span>
+                                </div>
+
+                                @if (!string.IsNullOrEmpty(Model.Verifications[i].DocumentPath))
+                                {
+                                    <div class="mt-2 d-flex gap-2">
+                                        <a href="/uploads/@Model.Verifications[i].DocumentPath" target="_blank" class="btn btn-sm btn-light border text-primary px-2 py-1 small" style="font-size:0.8rem;">
+                                            <i class="bi bi-eye"></i> View Existing
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+
+                        <!-- Executor Remarks / Notes -->
+                        <div class="row">
+                            <div class="col-12">
+                                <label class="form-label small">Executor Remarks / Notes</label>
+                                <textarea class="form-control custom-input" rows="2" asp-for="Verifications[i].ExecutorNotes" placeholder="Enter remarks here..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+        <!-- Final Summary & Report Section -->
+        <div class="card info-card mb-4 border-0">
+            <div class="card-body p-4">
+                <h5 class="fw-bold mb-3">Final Report Upload</h5>
+                <div class="border rounded p-4 d-flex justify-content-between align-items-center" style="background-color: #f9fafb; border-color: #e5e7eb !important;">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-file-earmark-text text-primary fs-3"></i>
+                        <div>
+                            <div class="fw-bold text-dark" style="font-size: 0.95rem;">Upload candidate final report</div>
+                            <div class="text-muted small">This final report compilation sheet will be shared directly with the client's dashboard.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <label class="btn btn-outline-secondary bg-white mb-0 d-flex align-items-center gap-2" style="border-color: #d1d5db; font-weight: 500; cursor: pointer;">
+                            <i class="bi bi-upload"></i> Upload report
+                            <input type="file" asp-for="FinalReportFile" class="d-none file-input">
+                        </label>
+                        <span class="selected-file text-muted small">No file selected</span>
+
+                        @if (!string.IsNullOrEmpty(Model.FinalReport))
+                        {
+                            <div class="d-flex gap-1">
+                                <a href="/uploads/@Model.FinalReport" target="_blank" class="btn btn-sm btn-primary py-2"><i class="bi bi-eye"></i></a>
+                                <a href="/uploads/@Model.FinalReport" download class="btn btn-sm btn-success py-2"><i class="bi bi-download"></i></a>
+                            </div>
+                        }
+                    </div>
+                   
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <label class="form-label text-xl fw-bold mb-0" style="color: #111827;">Final Summary</label>
+
+                            @if (!string.IsNullOrEmpty(Model.FinalSummary))
+                            {
+                                <!-- Agar DB me data hai, toh ek Edit/Cancel button dikhega -->
+                                <button type="button" id="btnToggleEdit" class="btn btn-sm btn-outline-primary py-1 px-2" style="font-size: 0.85rem; border-radius: 6px;">
+                                    <i class="bi bi-pencil-square"></i> Edit Summary
+                                </button>
+                            }
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(Model.FinalSummary))
+                        {
+                            <!-- 1. Display Mode (Default): Yeh normal text dikhayega -->
+                            <div id="summaryDisplayMode" class="form-control custom-input text-secondary" style="background-color: #f9fafb; min-height: 60px; height: auto; white-space: pre-line; border-color: #e5e7eb !important;">
+                                @Model.FinalSummary
+                            </div>
+
+                            <!-- 2. Edit Mode (Hidden initially): Yeh textarea toggle hone par khulega -->
+                            <div id="summaryEditMode" class="d-none">
+                                <textarea class="form-control custom-input" rows="3" asp-for="FinalSummary" placeholder="Update Final Summary here..."></textarea>
+                            </div>
+                        }
+                        else
+                        {
+                            <!-- Agar database me pehle se kuch nahi hai, toh seedhe textarea dikhega -->
+                            <textarea class="form-control custom-input" rows="3" asp-for="FinalSummary" placeholder="Enter Final Summary here..."></textarea>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submission Buttons -->
+        <div class="action-bar d-flex gap-3 pb-4">
+            <!-- FIXED: Added name="submitType" and value="Save" to recognize button in post back action -->
+            <button type="submit" name="submitType" value="Save" class="btn btn-custom-primary d-flex align-items-center gap-2">
+                <i class="bi bi-floppy"></i> Save Progress
+            </button>
+            <button type="submit" name="submitType" value="Final" class="btn btn-custom-secondary">
+                Submit Completed Case
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+    window.onload = function () {
+        var msg = '@TempData["success"]';
+        if (msg && msg !== '') {
+            document.getElementById("toastMessage").innerText = msg;
+            var toast = new bootstrap.Toast(document.getElementById("successToast"));
+            toast.show();
+        }
+    };
+
+    document.querySelectorAll(".file-input").forEach(function (input) {
+        input.addEventListener("change", function () {
+            let fileName = "No file selected";
+            if (this.files.length > 0) {
+                fileName = this.files[0].name;
+            }
+            const fileText = this.parentElement.parentElement.querySelector(".selected-file");
+            fileText.innerText = fileName;
+        });
+    });
+
+
+    // Is script ko apne existing script tag ke andar daal dein
+    document.addEventListener("DOMContentLoaded", function () {
+        const btnToggle = document.getElementById("btnToggleEdit");
+        if (btnToggle) {
+            btnToggle.addEventListener("click", function () {
+                const displayDiv = document.getElementById("summaryDisplayMode");
+                const editDiv = document.getElementById("summaryEditMode");
+
+                if (editDiv.classList.contains("d-none")) {
+                    // Edit mode chalu karein
+                    editDiv.classList.remove("d-none");
+                    displayDiv.classList.add("d-none");
+                    this.innerHTML = '<i class="bi bi-x-circle"></i> Cancel';
+                    this.classList.replace("btn-outline-primary", "btn-outline-danger");
+                } else {
+                    // Cancel karke wapas display mode me aayein
+                    editDiv.classList.add("d-none");
+                    displayDiv.classList.remove("d-none");
+                    this.innerHTML = '<i class="bi bi-pencil-square"></i> Edit Summary';
+                    this.classList.replace("btn-outline-danger", "btn-outline-primary");
+                }
+            });
+        }
+    });
+</script>

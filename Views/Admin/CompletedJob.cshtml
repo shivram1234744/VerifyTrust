@@ -1,0 +1,209 @@
+﻿@model List<TrustPlus.Models.JobWithDetailsViewModel>
+@{
+    ViewData["Title"] = "CompletedJob";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+
+
+    .badge-pending {
+        background: orange;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .badge-progress {
+        background: blue;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .badge-complete {
+        background: green;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<div class="pg-body">
+    <div class="pg-intro">
+        <h2>Completed Jobs</h2>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="card" style="margin-bottom:14px">
+        <div class="d-flex gap-2 flex-wrap align-items-center justify-content-between">
+            <input type="text" class="fi m-2" style="width:150px" id="searchInputEmp" placeholder="Search by Employee Name" />
+            <input type="text" class="fi m-2" style="width:150px" id="searchInputEmail" placeholder="Search by Email" />
+
+            @* <div class="hs" style="flex:1;min-width:180px">
+                <svg fill="none" height="14" stroke="var(--g300)" stroke-width="2" viewbox="0 0 24 24" width="14">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search by name, ID…" />
+            </div> *@
+            <select class="fi" style="width:150px" id="statusFilter">
+                <option value="">All Status</option>
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Complete">Complete</option>
+            </select>
+
+            <select class="fi" style="width:150px" id="priorityFilter">
+                <option value="">All Priority</option>
+                <option value="Urgent">Urgent</option>
+                <option value="Normal">Normal</option>
+            </select>
+            @*   <a asp-action="NewRequest" class="btn btn-n btn-sm">+ New Request</a>*@
+        </div>
+    </div>
+
+
+    <div class="card shadow-sm border-0">
+        <div class="card-header d-flex align-items-center justify-content-between bg-gradient-primary text-primary">
+            <span class="fw-bold">Completed Jobs (@Model.Count())</span>
+            <div>
+            @*     <span class="badge bg-warning me-2">Pending: @ViewBag.Pending</span>
+                <span class="badge bg-info me-2">In Progress: @ViewBag.InProgress</span> *@
+                <input type="text" class="fi m-2" style="width:150px" id="searchInput" placeholder="Search All" />
+                <span class="badge bg-success">Completed: @ViewBag.Completed</span>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Job Id</th>
+                        <th>Client Name</th>
+                     @*    <th>Case ID</th> *@
+                        <th>Employee Name</th>
+                        <th>Email Address</th>
+                        <th>Phone Number</th>
+                        <th>Position Applied</th>
+                        <th>Department</th>
+                        <th>JobDate</th>
+                        <th>Status</th>
+                        <th>Priority</th>
+                   @*      <th>Created At</th>
+                        <th>Updated At</th> *@
+                        <th>Assigned Clients</th>
+                    </tr>
+                </thead>
+                <tbody id="clientTable">
+                    @foreach (var job in Model)
+                    {
+                        <tr onclick="ViewDetails(@job.JobId)" style="cursor:pointer;">
+                            <td>@job.JobId</td>
+                            <td>@job.ClientName</td>
+                     @*        <td>@job.CaseId</td> *@
+                            <td>@job.EmployeeName</td>
+                            <td>@job.EmailAddress</td>
+                            <td>@job.PhoneNumber</td>
+                            <td>@job.PostionApplied</td>
+                            <td>@job.Department</td>
+                            <td>@job.JobDate.ToString()</td>
+                            <td>@job.Status</td>
+                            <td>@job.Priority</td>
+                     @*        <td>@job.CreatedAt.ToString("dd MMM yyyy hh:mm tt")</td>
+                            <td>@job.UpdatedAt.ToString()</td> *@
+
+                            @if (job != null)
+                            {
+                                <td>@job.AssignedUserName</td>
+                            }
+
+                            else
+                            {
+                                <span class="text-muted">Not Assigned</span>
+                            }
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between align-items-center">
+            <span class="text-muted">Showing @Model.Count() jobs</span>
+            <div class="btn-group">
+                <button class="btn btn-outline-secondary btn-sm">← Prev</button>
+                <button class="btn btn-primary btn-sm">1</button>
+                <button class="btn btn-outline-secondary btn-sm">2</button>
+                <button class="btn btn-outline-secondary btn-sm">Next →</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+
+    // function ViewDetails(id) {
+    //     window.location.href = '/Admin/Details/' + id;
+    // }
+
+
+    const searchInput = document.getElementById("searchInput");
+    const searchInputEmp = document.getElementById("searchInputEmp");
+    const searchInputEmail = document.getElementById("searchInputEmail");
+    const statusFilter = document.getElementById("statusFilter");
+    const priorityFilter = document.getElementById("priorityFilter");
+
+    searchInput.addEventListener("keyup", filterTable);
+    searchInputEmp.addEventListener("keyup", filterTable);
+    searchInputEmail.addEventListener("keyup", filterTable);
+    statusFilter.addEventListener("change", filterTable);
+    priorityFilter.addEventListener("change", filterTable);
+
+    function filterTable() {
+        let searchValue = searchInput.value.toLowerCase().trim();
+        let searchValueEmp = searchInputEmp.value.toLowerCase().trim();
+        let searchValueEmail = searchInputEmail.value.toLowerCase().trim();
+        let statusValue = statusFilter.value.toLowerCase().trim();
+        let priorityValue = priorityFilter.value.toLowerCase().trim();
+
+        let rows = document.querySelectorAll("#clientTable tr");
+
+        rows.forEach(function (row) {
+            // 1. Fetch text data from target cells accurately
+            let employeeName = row.cells[2]?.innerText.toLowerCase() || "";
+            let email = row.cells[3]?.innerText.toLowerCase() || "";
+            let status = row.cells[8]?.innerText.toLowerCase() || "";
+            let priority = row.cells[9]?.innerText.toLowerCase() || "";
+
+            // Full row text for the original catch-all search box
+            let allRowText = row.innerText.toLowerCase();
+
+            // 2. Separate logic conditions per individual input element
+            let matchesGlobalSearch = searchValue === "" || allRowText.includes(searchValue);
+            let matchesEmpSearch = searchValueEmp === "" || employeeName.includes(searchValueEmp);
+            let matchesEmailSearch = searchValueEmail === "" || email.includes(searchValueEmail);
+
+            let matchesStatus = statusValue === "" || status.includes(statusValue);
+            let matchesPriority = priorityValue === "" || priority.includes(priorityValue);
+
+            // 3. Row displays only if it passes every active filter condition
+            if (matchesGlobalSearch && matchesEmpSearch && matchesEmailSearch && matchesStatus && matchesPriority) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    }
+
+
+
+</script>
+
+
