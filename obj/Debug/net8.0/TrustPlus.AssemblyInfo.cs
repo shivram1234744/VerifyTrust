@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrustPlus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ff934807e6414c40af7a28da95f122bfbd9f183")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrustPlus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrustPlus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

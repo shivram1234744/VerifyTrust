@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wR8R3utWg6U=",
+  "dgSpecHash": "Y1TPqdEq924=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj",
+  "projectFilePath": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ay694\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\ay694\\.nuget\\packages\\dapper\\2.1.72\\dapper.2.1.72.nupkg.sha512",

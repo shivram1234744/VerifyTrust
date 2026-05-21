@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj": {}
+    "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj": {
+    "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj",
+        "projectUniqueName": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj",
         "projectName": "TrustPlus",
-        "projectPath": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj",
+        "projectPath": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\TrustPlus.csproj",
         "packagesPath": "C:\\Users\\ay694\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\obj\\",
+        "outputPath": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ay694\\AppData\\Roaming\\NuGet\\NuGet.Config",

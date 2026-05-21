@@ -1,69 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\",
+  "WorkspaceRootPath": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\wwwroot\\css\\clientstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:wwwroot\\css\\clientstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\shared\\_clientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\shared\\_clientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\client\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\client\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\wwwroot\\css\\adminstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:wwwroot\\css\\adminstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\executor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\executor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\shared\\_executorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\shared\\_executorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\assignedjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\shared\\_executorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\shared\\_executorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\executor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\executor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\client\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\client\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\wwwroot\\css\\clientstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:wwwroot\\css\\clientstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\shared\\_clientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\shared\\_clientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\wwwroot\\css\\adminstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:wwwroot\\css\\adminstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\assignedjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\admin\\assignedjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\completedjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\completedjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\admin\\completedjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\requestmgmt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\requestmgmt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\admin\\requestmgmt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\controllers\\executorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\controllers\\executorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:controllers\\executorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\employeemst.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\employeemst.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\admin\\employeemst.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\users\\ay694\\onedrive\\documents\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|c:\\m\\trustplus_20_05\\trustplus\\trustplus\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DDAF02C4-94EE-44D9-AEF5-70BD44D6ECFD}|TrustPlus.csproj|solutionrelative:views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -83,210 +91,219 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientStyleSheet.css",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\ClientStyleSheet.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\ClientStyleSheet.css",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\ClientStyleSheet.css",
-              "RelativeToolTip": "wwwroot\\css\\ClientStyleSheet.css",
-              "ViewState": "AgIAANYAAAAAAAAAAAAowOEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-20T15:42:25.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdminStyleSheet.css",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\AdminStyleSheet.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\AdminStyleSheet.css",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\AdminStyleSheet.css",
-              "RelativeToolTip": "wwwroot\\css\\AdminStyleSheet.css",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAAAM8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-20T15:41:08.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_ExecutorLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ExecutorLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ExecutorLayout.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ExecutorLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ExecutorLayout.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAowD8AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T13:23:55.236Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-20T20:04:30.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_ClientLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ClientLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_ClientLayout.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ClientLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_ClientLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAANkCAAAAAAAAAAAAAOICAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T13:23:32.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T19:52:19.741Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAALgAAAAAAAAAAIBJwMYAAAAhAAAAAAAAAA==",
+              "Title": "ClientStyleSheet.css",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\ClientStyleSheet.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\ClientStyleSheet.css",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\ClientStyleSheet.css",
+              "RelativeToolTip": "wwwroot\\css\\ClientStyleSheet.css",
+              "ViewState": "AgIAAEABAAAAAAAAAAAowEoBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-20T15:42:25.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminStyleSheet.css",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\AdminStyleSheet.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\AdminStyleSheet.css",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\wwwroot\\css\\AdminStyleSheet.css",
+              "RelativeToolTip": "wwwroot\\css\\AdminStyleSheet.css",
+              "ViewState": "AgIAAMwAAAAAAAAAAIBJwM8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-20T15:41:08.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ExecutorLayout.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ExecutorLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ExecutorLayout.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ExecutorLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ExecutorLayout.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAADdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T13:23:01.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T13:23:55.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ClientLayout.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ClientLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ClientLayout.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_ClientLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ClientLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-20T13:23:32.424Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Client\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Client\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Client\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Client\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPQAAAAIAAAAAAAAAA==",
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAADcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T13:21:02.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T13:23:01.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Client\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Client\\Dashboard.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Client\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Client\\Dashboard.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAgwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-20T13:21:02.112Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Executor\\Dashboard.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Executor\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "Views\\Executor\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Executor\\Dashboard.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Executor\\Dashboard.cshtml",
               "RelativeToolTip": "Views\\Executor\\Dashboard.cshtml",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAH0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAQwGYAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T13:15:57.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CompletedJob.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\CompletedJob.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\CompletedJob.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\CompletedJob.cshtml",
-              "RelativeToolTip": "Views\\Admin\\CompletedJob.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAIBJwCwAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T13:03:33.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T13:15:57.516Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Details.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Details.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Details.cshtml",
-              "ViewState": "AgIAAKkBAAAAAAAAAAAowLwBAAASAAAAAAAAAA==",
+              "Title": "CompletedJob.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\CompletedJob.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CompletedJob.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\CompletedJob.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CompletedJob.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBZwCwAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T12:22:34.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ExecutorController.cs",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ExecutorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExecutorController.cs",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ExecutorController.cs",
-              "RelativeToolTip": "Controllers\\ExecutorController.cs",
-              "ViewState": "AgIAACEBAAAAAAAAAAD4vyoBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T11:36:31.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "Controllers\\ClientController.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAMwPQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T11:36:31.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AssignedJob.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\AssignedJob.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\AssignedJob.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\AssignedJob.cshtml",
-              "RelativeToolTip": "Views\\Admin\\AssignedJob.cshtml",
-              "ViewState": "AgIAAJgAAAAAAAAAAABRwMwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T11:38:18.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RequestMgmt.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\RequestMgmt.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\RequestMgmt.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\RequestMgmt.cshtml",
-              "RelativeToolTip": "Views\\Admin\\RequestMgmt.cshtml",
-              "ViewState": "AgIAADgBAAAAAAAAAAAcwDwBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-20T10:55:50.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T13:03:33.425Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAN4CAAAAAAAAAAD4v+cCAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:55:34.879Z",
-              "EditorCaption": ""
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Details.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Details.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Details.cshtml",
+              "ViewState": "AgIAAKkBAAAAAAAAAAAowLwBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-20T12:22:34.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EmployeeMst.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\EmployeeMst.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\EmployeeMst.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\EmployeeMst.cshtml",
-              "RelativeToolTip": "Views\\Admin\\EmployeeMst.cshtml",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAYwPIAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-14T13:24:05.28Z",
-              "EditorCaption": ""
+              "DocumentIndex": 13,
+              "Title": "ExecutorController.cs",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ExecutorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExecutorController.cs",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ExecutorController.cs",
+              "RelativeToolTip": "Controllers\\ExecutorController.cs",
+              "ViewState": "AgIAACEBAAAAAAAAAAD4vyoBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T11:36:31.997Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\ay694\\OneDrive\\Documents\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAGEAAAAAAAAAAIBJwDsAAAAlAAAAAAAAAA==",
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Controllers\\ClientController.cs",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAMwPQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T11:36:31.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssignedJob.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\AssignedJob.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AssignedJob.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\AssignedJob.cshtml",
+              "RelativeToolTip": "Views\\Admin\\AssignedJob.cshtml",
+              "ViewState": "AgIAAJUAAAAAAAAAAMBdwMwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-15T05:13:14.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T11:38:18.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RequestMgmt.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\RequestMgmt.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\RequestMgmt.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\RequestMgmt.cshtml",
+              "RelativeToolTip": "Views\\Admin\\RequestMgmt.cshtml",
+              "ViewState": "AgIAADgBAAAAAAAAAAAcwDwBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-20T10:55:50.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAN4CAAAAAAAAAAD4v+cCAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T10:55:34.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmployeeMst.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\EmployeeMst.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EmployeeMst.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\EmployeeMst.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EmployeeMst.cshtml",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAYwPIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-14T13:24:05.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "C:\\m\\TrustPlus_20_05\\TrustPlus\\TrustPlus\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAIBZwDsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-15T05:13:14.569Z"
             }
           ]
         }
