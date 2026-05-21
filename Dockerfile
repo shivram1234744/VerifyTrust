@@ -9,4 +9,5 @@ WORKDIR /app
 
 COPY --from=build /app/publish .
 
-ENTRYPOINT ["dotnet", "VerifyTrust.dll"]
+
+ENTRYPOINT ["dotnet", "TrustPlus.dll"]
